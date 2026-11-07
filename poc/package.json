@@ -1,0 +1,27 @@
+{
+  "name": "busnetwork-portal-poc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Throwaway proof-of-concept of the BusNetwork portal: trip sharing, lifecycle, invoicing and dashboard for host and partner companies.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^26.6.4",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

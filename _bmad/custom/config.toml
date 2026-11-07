@@ -1,0 +1,23 @@
+# Team / enterprise overrides for _bmad/config.toml.
+# Committed to the repo — applies to every developer on the project.
+# Tables deep-merge over base config; keyed entries merge by key.
+# Example: override an agent descriptor, or add a new agent.
+#
+# [agents.bmad-agent-pm]
+# description = "Prefers short, bulleted PRDs over narrative drafts."
+
+# BusNetwork: BMAD outputs live in docs/ (moved from _bmad-output/ on 2026-10-04).
+# Pinned here so a reinstall cannot point them back.
+[core]
+output_folder = "{project-root}/docs"
+
+[modules.bmm]
+planning_artifacts = "{project-root}/docs/planning-artifacts"
+implementation_artifacts = "{project-root}/docs/implementation-artifacts"
+project_knowledge = "{project-root}/docs"
+
+[modules.tea]
+test_artifacts = "{project-root}/docs/test-artifacts"
+test_design_output = "docs/test-artifacts/test-design"
+test_review_output = "docs/test-artifacts/test-reviews"
+trace_output = "docs/test-artifacts/traceability"

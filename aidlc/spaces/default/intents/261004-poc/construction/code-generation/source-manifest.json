@@ -1,0 +1,14 @@
+{
+  "stage": "code-generation",
+  "version": 1,
+  "writes": [
+    { "path": "poc/.gitignore" },
+    { "path": "poc/package.json" },
+    { "path": "poc/package-lock.json" },
+    { "path": "poc/README.md" },
+    { "path": "poc/tsconfig.json" },
+    { "path": "poc/vitest.config.ts" },
+    { "path": "poc/src/" },
+    { "path": "poc/test/" }
+  ]
+}
